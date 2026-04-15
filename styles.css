@@ -31,7 +31,7 @@ body {
     top: 0;
     width: 80px;
     height: 100vh;
-    background-image: url('лента.png');
+    background-image: url('images/лента.png');
     background-repeat: repeat-y;
     background-size: cover;
     z-index: 9999;
@@ -95,7 +95,7 @@ h1, h2, .hero-title, .portrait-name, .footer-logo, .winner-title, .channel-title
     justify-content: center;
     text-align: center;
     position: relative;
-    background-image: url('фон.png');
+    background-image: url('./images/фон.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -562,17 +562,20 @@ h1, h2, .hero-title, .portrait-name, .footer-logo, .winner-title, .channel-title
 }
 
 /* Визуалы */
+/* Примеры материалов — уменьшенный размер */
 .visuals-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
 }
 
 .visual-frame {
     background: #C4BBA8;
-    border-radius: 20px;
-    aspect-ratio: 3 / 4;
+    border-radius: 16px;
+    aspect-ratio: 1 / 1;
     width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -588,8 +591,8 @@ h1, h2, .hero-title, .portrait-name, .footer-logo, .winner-title, .channel-title
 
 .visual-caption {
     text-align: center;
-    margin-top: 12px;
-    font-size: 0.7rem;
+    margin-top: 8px;
+    font-size: 0.65rem;
     letter-spacing: 1px;
 }
 
